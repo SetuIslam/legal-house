@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #707070;
+}
+
+
+/*General css*/
+h1,h2,h3,h4,h5,h6{
+    font-family: 'EB Garamond', serif;
+}
+.color-white{
+    color: #FFFFFF;
+}
+
+.btn-legal {
+    background: #B68C5A;
+    border-radius: 8px;
+    width: 220px;
+    height: 64px;
+    color: #ffffff;
+    font-weight: 600;
+    transition: .5s;
+    border-width: 2px;
+}
+.btn-legal:hover{
+    color: #B68C5A;
+    background: transparent;
+    border: 2px solid #B68C5A;
+}
+.subtitle,
+.section_title{
+    font-family: 'EB Garamond';
+    font-weight: 800;
+    text-align: center;
+    text-transform: capitalize;    
+}
+.section_title{
+    font-size: 40px;
+    line-height: 52px;
+}
+.subtitle{
+    font-size: 32px;
+    line-height: 42px;
+}
+
+/*==================================================
+                        Header
+=====================================================*/
+.header .navbar-light .navbar-nav .nav-link.active, 
+.header .navbar-light .navbar-nav .show>.nav-link,
+.header .navbar-light .navbar-nav .nav-link:focus, 
+.header .navbar-light .navbar-nav .nav-link:hover {
+    color: #B68C5A;
+}
+.header .nav-item {
+    position: relative;
+    padding-right: 20px;
+}
+
+.header .nav-item:not(:first-child) .nav-link:after {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    position: relative;
+    right: -5px;
+    top: 2px;
+}
+/*================================
+            Banner
+=================================*/
+.banner_area{
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    border-radius: 8px;
+}
+.banner_area:after{
+    content: '';
+    background: linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.banner-contents {
+    z-index: 1;
+    padding: 0 15px;
+}
+.banner-contents h1 {
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 85px;  
+    margin-bottom: 20px;
+}
+.banner-contents p {
+    margin-bottom: 20px;
+}
+
+.banner_form .btn-legal {
+    width: 155px;
+}
+.banner_form .btn-legal:hover {
+    background: #ffffff;
+}
+
+/*=============================================
+           The Legal Practice Area
+==============================================*/
+.practice-area{
+    padding: 100px 0;
+}
+.thumbnail-border{
+    transition: .5s;
+}
+
+.thumbnail-border:hover {
+    background: linear-gradient(180deg, #F3F3F3 0%, rgba(243, 243, 243, 0) 100%);
+}
+.practice-content-thumbnail {
+    padding: 20px;
+}
+.practice-content-icon {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 20px;
+}
+
+.practice-content-icon img {
+    width: 100%;
+}
+/* .practice-content-thumbnail-txt {
+    width: 258px;
+    margin: auto;
+} */
+.practice-content-thumbnail-txt .link-btn {
+    background: #B68C5A;
+   width: 40px;
+   height: 40px;
+    border-radius: 50%;
+    margin: auto;
+}
+.practice-content-thumbnail-txt .link-btn {
+    padding: 9px 13px;
+}
+
+
+
+/*================================
+         Testimonial
+=================================*/
+.testimonial-content .carousel-item::after,
+.testimonial-content .carousel-item img{
+    border-radius: 8px;
+}
+.slider-bg img {
+    height: 500px;
+}
+.testimonial-content .carousel-item::after{
+    content: '';
+    position: absolute;
+    background: rgba(17, 17, 17, 0.8);
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.carousel-contents {
+    top: 20%;
+    z-index: 1;
+    max-width: 80%;
+    margin: auto;
+    right: 0;
+    left: 0;
+}
+.carousel-contents h4 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 31px;
+    margin-top: 20px;
+}
+
+.carousel-contents h5 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.testimonial-content .carousel-indicators{
+    bottom: 50px;
+}
+
+
+/*================================
+            FAQ
+=================================*/
+.faq{
+    padding: 100px 0;
+}
+.accordion-item {
+    background-color: #F3F3F3;
+    border: 0;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.accordion-button {
+    font-family: 'EB Garamond';
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 31px;
+    text-align: center;
+    color: #414040;
+    background: #F3F3F3;
+    border-radius: 8px;
+}
+
+.accordion-button:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #414040;;
+    background-color: #F3F3F3;
+    box-shadow: none;
+}
+.accordion-button::after {
+    background-image: none;
+    transform: none;
+    content: '\2b';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: none;
+    content: '\f068';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    
+}
+/*================================
+            Footer
+=================================*/
+.footer {
+    background: #111111;
+    padding: 100px 0;
+    color: #CFCFCF;
+}
+.footer-logo{
+    margin-bottom: 25px;
+}
+.footer-content h3 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+.footer-content.useful-link li {
+    list-style: none;
+    line-height: 40px;
+}
+
+.footer-content .form-control {
+    height: 72px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+.footer-content .input-group-text {
+    width: 72px;
+    height: 72px;
+    background: #B68C5A;
+    border-radius: 8px;
+    color: #ffffff;
+    justify-content: center;
+    border: 1px solid #B68C5A;
+}

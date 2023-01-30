@@ -1,0 +1,85 @@
+@media screen and (min-width:400px){
+    .footer-content .input-group{
+        width: 325px;
+    }
+}
+@media screen and (min-width:768px){
+    .practice-content-thumbnail {
+        padding: 70px;
+    }
+}
+@media screen and (min-width:992px){
+    .banner-contents {
+        width: 670px;
+        margin: 0 auto;
+    }
+    .banner_form .form-control {
+        width: 73%;
+    }
+    .section-title-content{
+        max-width: 715px;
+        margin: auto;
+    }
+    .thumbnail-border:nth-child(3),
+    .thumbnail-border:nth-child(2),
+    .thumbnail-border:first-child {
+        border-bottom: 1px solid #E7E7E7;
+    }
+    .thumbnail-border:nth-child(even) {
+        border-right: 1px solid #E7E7E7;
+        border-left: 1px solid #E7E7E7;
+    }
+
+    .thumbnail-border:last-child{
+        border-right: none
+    }
+    .thumbnail-border:nth-child(3n+1){
+        border-left: none
+    }
+}
+
+
+@media screen and (max-width:991px) {
+    
+    .banner-contents h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .banner_form {
+        padding: 0 15px;
+    }
+    .banner_form .form-control {
+        height: 64px;
+    }
+    .banner_form .btn-legal {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .thumbnail-border:not(:last-child) {
+        border-bottom: 1px solid #E7E7E7;
+    }
+    .carousel-contents {
+        top: 10%;
+    }
+    .faq-content .row {
+        flex-direction: column-reverse;
+    }
+    
+}
+@media screen and (max-width:575px) {
+    .testimonial-content .carousel-indicators{
+        bottom: 20px;
+    }
+
+
+}
+@media screen and (max-width:400px) {
+    .carousel-contents {
+        top: 5%;
+    }
+    .testimonial-content .carousel-indicators{
+        bottom: 0px;
+    }
+}
